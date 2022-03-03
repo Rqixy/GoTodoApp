@@ -60,6 +60,37 @@ func GetUser(id int) (user User, err error) {
 	return user, err
 }
 
+//全てのUserを取得
+func GetUsers() (users []User, err error) {
+	sql := `SELECT id, uuid, name, email, password, created_at FROM users`
+	//レコードを全て取得
+	rows, err := Db.Query(sql)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	//取得したレコードを一つ一つ配列に格納する
+	for rows.Next() {
+		var user User
+		err = rows.Scan(
+			&user.ID,
+			&user.UUID,
+			&user.Name,
+			&user.Email,
+			&user.Password,
+			&user.CreatedAt,
+		)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		//配列に格納する
+		users = append(users, user)
+	}
+
+	return users, err
+}
+
 //Userのデータ更新
 func (u *User) UpdateUser() (err error) {
 	sql := `UPDATE users SET  name = ?, email = ? WHERE id = ?`

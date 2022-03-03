@@ -6,6 +6,29 @@ import (
 	"sampleapp/app/models"
 )
 
+//DB内のメールアドレスとフォームから取得したメールアドレスを比較する
+func checkEmail(w http.ResponseWriter, r *http.Request, user models.User) (valid bool) {
+	valid = true
+	
+	//登録されているすべてのUserを取得
+	modelsUsers, err := models.GetUsers()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	//DBにある全てのUserのメールアドレスと
+	//フォームから送られてきたメールアドレスを比較して、
+	//存在していたら、メッセージを返す
+	for _, modelsUser := range modelsUsers {
+		if user.Email == modelsUser.Email {
+			valid = false
+			break
+		}
+	}
+	
+	return valid
+}
+
 //新規登録のルート作成
 func signup(w http.ResponseWriter, r *http.Request) {
 	//SignUpPageに移動した時に生成される
@@ -32,13 +55,19 @@ func signup(w http.ResponseWriter, r *http.Request) {
 			Password: r.PostFormValue("password"),
 		}
 
+		//DB内のメールアドレスとフォームから取得したメールアドレスを比較する
+		if ok := checkEmail(w, r, user); !ok {
+			generateHTML(w, user, "layout", "public_navbar", "signup")
+			return
+		}
+
 		err = user.CreateUser()
 		if err != nil {
 			log.Fatal(err)
 		}
 
 		//TopPageに戻る
-		http.Redirect(w, r, "/todos", 302)
+		http.Redirect(w, r, "/", 302)
 	}
 }
 
@@ -52,6 +81,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//ログイン確認処理
 func authenticate(w http.ResponseWriter, r *http.Request) {
 	//postメソッドが送信された時に実行される
 	//入力フォームからの解析
@@ -86,6 +116,7 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//ログアウト処理
 func logout(w http.ResponseWriter, r *http.Request) {
 	//ブラウザからcookieを取得
 	cookie, err := r.Cookie("_cookie")

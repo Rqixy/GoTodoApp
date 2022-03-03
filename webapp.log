@@ -939,3 +939,1588 @@ created by net/http.(*Server).Serve
 2022/03/03 17:32:18 server.go:47: qi =  1
 2022/03/03 17:32:18 server.go:48: err =  <nil>
 2022/03/03 18:03:24 server.go:39: q =  []
+2022/03/03 20:14:17 server.go:3160: http: panic serving [::1]:55990: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000111160})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000bc000}, {0x0, 0x0}, {0xc0001338a0, 0x3, 0x5711008})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000bc000}, 0xc0000a6000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000bc000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000bc000}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e030}, {0x454e1b8, 0xc0000bc000}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:17 server.go:3160: http: panic serving [::1]:55991: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000292070})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000bc0e0}, {0x0, 0x0}, {0xc0001398a0, 0x3, 0x44956a0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000bc0e0}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000bc0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000bc0e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e1b8, 0xc0000bc0e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001315e0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:17 server.go:3160: http: panic serving [::1]:55992: template: signup.html:13: missing value for if
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a2530})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000bc1c0}, {0x0, 0x0}, {0xc0001398a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000bc1c0}, 0xc0000a6300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000bc1c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000bc1c0}, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009ed80}, {0x454e1b8, 0xc0000bc1c0}, 0xc0000a6300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000e8000, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55993: template: signup.html:13: missing value for if
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0002922e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002d2000}, {0x0, 0x0}, {0xc0002dd8a0, 0x3, 0x575b488})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002d2000}, 0xc0000a6600)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002d2000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002d2000}, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f6b0}, {0x454e1b8, 0xc0002d2000}, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002c0000, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55994: template: signup.html:13: missing value for if
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a25b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc000324000}, {0x0, 0x0}, {0xc0002d98a0, 0x3, 0x5791c40})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc000324000}, 0xc0002c2000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc000324000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc000324000}, 0xc0002c2000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000290270}, {0x454e1b8, 0xc000324000}, 0xc0002c2000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002c00a0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55995: template: signup.html:13: missing value for if
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a2820})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000bc2a0}, {0x0, 0x0}, {0xc0001398a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000bc2a0}, 0xc0000a6700)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000bc2a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000bc2a0}, 0xc0000a6700)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009f830}, {0x454e1b8, 0xc0000bc2a0}, 0xc0000a6700)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000e80a0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55996: template: signup.html:13: missing value for if
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a2910})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002d20e0}, {0x0, 0x0}, {0xc0002dd8a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002d20e0}, 0xc0000a6900)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002d20e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002d20e0}, 0xc0000a6900)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000fa210}, {0x454e1b8, 0xc0002d20e0}, 0xc0000a6900)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002c0140, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55997: template: signup.html:13: missing value for if
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000304440})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0003240e0}, {0x0, 0x0}, {0xc0002d98a0, 0x3, 0x44956a0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0003240e0}, 0xc0002c2200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0003240e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0003240e0}, 0xc0002c2200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000290cc0}, {0x454e1b8, 0xc0003240e0}, 0xc0002c2200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002c01e0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:18 server.go:3160: http: panic serving [::1]:55998: template: signup.html:13: missing value for if
+goroutine 61 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a2960})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002d21c0}, {0x0, 0x0}, {0xc0002df8a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002d21c0}, 0xc0002c2300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002d21c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002d21c0}, 0xc0002c2300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000291440}, {0x454e1b8, 0xc0002d21c0}, 0xc0002c2300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002c0280, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:23 server.go:3160: http: panic serving [::1]:55999: template: signup.html:13: missing value for if
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000a2bd0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000bc380}, {0x0, 0x0}, {0xc0002dd8a0, 0x3, 0x514e160})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000bc380}, 0xc00030e100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000bc380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000bc380}, 0xc00030e100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301260}, {0x454e1b8, 0xc0000bc380}, 0xc00030e100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000e8140, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:23 server.go:3160: http: panic serving [::1]:56000: template: signup.html:13: missing value for if
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0002928f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002d22a0}, {0x0, 0x0}, {0xc0002df8a0, 0x3, 0x44956a0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002d22a0}, 0xc0000a6a00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002d22a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002d22a0}, 0xc0000a6a00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000fa600}, {0x454e1b8, 0xc0002d22a0}, 0xc0000a6a00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000e81e0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:14:23 server.go:3160: http: panic serving [::1]:56001: template: signup.html:13: missing value for if
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0003046c0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0003241c0}, {0x0, 0x0}, {0xc0002d98a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0003241c0}, 0xc00030e200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0003241c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0003241c0}, 0xc00030e200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301320}, {0x454e1b8, 0xc0003241c0}, 0xc00030e200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00036c000, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:19 server.go:3160: http: panic serving [::1]:56342: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000012160})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0001900e0}, {0x0, 0x0}, {0xc0001338a0, 0x3, 0x5711e60})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0001900e0}, 0xc00007e000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0001900e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0001900e0}, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074030}, {0x454e1b8, 0xc0001900e0}, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001314a0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:19 server.go:3160: http: panic serving [::1]:56343: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc0000122a0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002a0000}, {0x0, 0x0}, {0xc0002ad8a0, 0x3, 0x575bcc0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002a0000}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002a0000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002a0000}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e1b8, 0xc0002a0000}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:19 server.go:3160: http: panic serving [::1]:56344: template: signup.html:13: missing value for if
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc00029c240})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc000250000}, {0x0, 0x0}, {0xc0001338a0, 0x3, 0x514c758})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc000250000}, 0xc00007e100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc000250000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc000250000}, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074a80}, {0x454e1b8, 0xc000250000}, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000246000, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:20 server.go:3160: http: panic serving [::1]:56346: template: signup.html:13: missing value for if
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000012620})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002500e0}, {0x0, 0x0}, {0xc0001338a0, 0x3, 0x44956a0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002500e0}, 0xc0002e0000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x4, {0x454e1b8, 0xc0002500e0}, 0x5142108)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002500e0}, 0xc0002e0000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000286900}, {0x454e1b8, 0xc0002500e0}, 0xc0002e0000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000ac000, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:20 server.go:3160: http: panic serving [::1]:56347: template: signup.html:13: missing value for if
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc000012770})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0002a00e0}, {0x0, 0x0}, {0xc0002af8a0, 0x3, 0x0})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0002a00e0}, 0xc0000c0000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0002a00e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0002a00e0}, 0xc0000c0000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e180}, {0x454e1b8, 0xc0002a00e0}, 0xc0000c0000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000ac0a0, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:11:20 server.go:3160: http: panic serving [::1]:56348: template: signup.html:13: missing value for if
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474740, 0xc00029c3f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e1b8, 0xc0000d6000}, {0x0, 0x0}, {0xc0002ad8a0, 0x3, 0x514ed98})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e1b8, 0xc0000d6000}, 0xc0000c0100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:16 +0x10e
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e1b8, 0xc0000d6000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e1b8, 0xc0000d6000}, 0xc0000c0100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e270}, {0x454e1b8, 0xc0000d6000}, 0xc0000c0100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000ac140, {0x454fa80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:28 server.go:3160: http: panic serving [::1]:56427: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0001111d0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00022e000}, {0x0, 0x0}, {0xc000133990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00022e000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e030}, {0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:28 server.go:3160: http: panic serving [::1]:56428: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111430})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001900e0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001315e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:28 server.go:3160: http: panic serving [::1]:56429: template: signup.html:13: missing value for if
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012270})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00028a000}, {0x0, 0x0}, {0xc000297990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00028a000}, 0xc000078000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00028a000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00028a000}, 0xc000078000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074090}, {0x454e3b8, 0xc00028a000}, 0xc000078000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000076000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:29 server.go:3160: http: panic serving [::1]:56430: template: signup.html:13: missing value for if
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000122d0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00022e0e0}, {0x0, 0x0}, {0xc000135990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00022e0e0}, 0xc000078100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00022e0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00022e0e0}, 0xc000078100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074a20}, {0x454e3b8, 0xc00022e0e0}, 0xc000078100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00024e000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:29 server.go:3160: http: panic serving [::1]:56431: template: signup.html:13: missing value for if
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111690})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001901c0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001901c0}, 0xc000216100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001901c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001901c0}, 0xc000216100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e5d0}, {0x454e3b8, 0xc0001901c0}, 0xc000216100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00024e0a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:29 server.go:3160: http: panic serving [::1]:56432: template: signup.html:13: missing value for if
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111900})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001902a0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001902a0}, 0xc00017c300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0xc00017c300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c0ff0}, {0x454e3b8, 0xc0001902a0}, 0xc00017c300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131680, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:34 server.go:3160: http: panic serving [::1]:56433: template: signup.html:13: missing value for if
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111b70})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190380}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190380}, 0xc000078200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0xc000078200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074a80}, {0x454e3b8, 0xc000190380}, 0xc000078200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131720, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:34 server.go:3160: http: panic serving [::1]:56434: template: signup.html:13: missing value for if
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111dd0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190460}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190460}, 0xc00017c400)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0xc00017c400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c1a10}, {0x454e3b8, 0xc000190460}, 0xc00017c400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001317c0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:34 server.go:3160: http: panic serving [::1]:56435: template: signup.html:13: missing value for if
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000332040})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190540}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190540}, 0xc00017c500)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190540}, 0xc00017c500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000302cf0}, {0x454e3b8, 0xc000190540}, 0xc00017c500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131860, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:59 server.go:3160: http: panic serving [::1]:56447: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0001111c0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00022e000}, {0x0, 0x0}, {0xc000133990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00022e000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e030}, {0x454e3b8, 0xc00022e000}, 0xc000216000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001314a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:59 server.go:3160: http: panic serving [::1]:56448: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111420})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001900e0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e3b8, 0xc0001900e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:13:59 server.go:3160: http: panic serving [::1]:56449: template: signup.html:13: missing value for if
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0001114b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000292000}, {0x0, 0x0}, {0xc000133990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000292000}, 0xc000282000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000292000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000292000}, 0xc000282000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072120}, {0x454e3b8, 0xc000292000}, 0xc000282000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000280000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:18 server.go:3160: http: panic serving [::1]:56473: template: signup.html:13: missing value for if
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0001186f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00013e2a0}, {0x0, 0x0}, {0xc00015b990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00013e2a0}, 0xc000128200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00013e2a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00013e2a0}, 0xc000128200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000114030}, {0x454e3b8, 0xc00013e2a0}, 0xc000128200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000185540, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:18 server.go:3160: http: panic serving [::1]:56474: template: signup.html:13: missing value for if
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000aa240})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0000ae000}, {0x0, 0x0}, {0xc0000bb990, 0x3, 0x51415b8})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0000ae000}, 0xc0001c8200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0000ae000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0000ae000}, 0xc0001c8200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077770}, {0x454e3b8, 0xc0000ae000}, 0xc0001c8200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001855e0, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:18 server.go:3160: http: panic serving [::1]:56477: template: signup.html:13: missing value for if
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000aa4b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0000ae0e0}, {0x0, 0x0}, {0xc0000bb990, 0x3, 0x51415b8})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0000ae0e0}, 0xc000092100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0000ae0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0000ae0e0}, 0xc000092100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000949c0}, {0x454e3b8, 0xc0000ae0e0}, 0xc000092100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000ee000, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:19 server.go:3160: http: panic serving [::1]:56479: template: signup.html:13: missing value for if
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000118960})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00013e380}, {0x0, 0x0}, {0xc000187990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00013e380}, 0xc000092300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00013e380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00013e380}, 0xc000092300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000095350}, {0x454e3b8, 0xc00013e380}, 0xc000092300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000160280, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:19 server.go:3160: http: panic serving [::1]:56480: template: signup.html:13: missing value for if
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000aa720})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0000ae1c0}, {0x0, 0x0}, {0xc0000bb990, 0x3, 0x51415b8})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0000ae1c0}, 0xc000128500)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0000ae1c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0000ae1c0}, 0xc000128500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00016e750}, {0x454e3b8, 0xc0000ae1c0}, 0xc000128500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000160320, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:17:19 server.go:3160: http: panic serving [::1]:56481: template: signup.html:13: missing value for if
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000013300})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001dc0e0}, {0x0, 0x0}, {0xc00018d990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001dc0e0}, 0xc0001c8300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001dc0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001dc0e0}, 0xc0001c8300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000077860}, {0x454e3b8, 0xc0001dc0e0}, 0xc0001c8300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000185680, {0x454fc80, 0xc000077620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:16 server.go:3160: http: panic serving [::1]:56490: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012270})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206000}, {0x0, 0x0}, {0xc000133990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206000}, 0xc000078000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206000}, 0xc000078000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000074030}, {0x454e3b8, 0xc000206000}, 0xc000078000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001314a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:16 server.go:3160: http: panic serving [::1]:56491: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000124d0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002060e0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002060e0}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002060e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002060e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e3b8, 0xc0002060e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:16 server.go:3160: http: panic serving [::1]:56492: template: signup.html:13: missing value for if
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012740})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002061c0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002061c0}, 0xc000078300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002061c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002061c0}, 0xc000078300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000075410}, {0x454e3b8, 0xc0002061c0}, 0xc000078300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:19 server.go:3160: http: panic serving [::1]:56493: template: signup.html:13: missing value for if
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012a00})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002062a0}, {0x0, 0x0}, {0xc000223990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002062a0}, 0xc000078700)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002062a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002062a0}, 0xc000078700)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000075da0}, {0x454e3b8, 0xc0002062a0}, 0xc000078700)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:19 server.go:3160: http: panic serving [::1]:56494: template: signup.html:13: missing value for if
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012c60})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206380}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206380}, 0xc00029a000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206380}, 0xc00029a000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002840f0}, {0x454e3b8, 0xc000206380}, 0xc00029a000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002880a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:19 server.go:3160: http: panic serving [::1]:56497: template: signup.html:13: missing value for if
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000012ed0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206460}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206460}, 0xc000078a00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206460}, 0xc000078a00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000273710}, {0x454e3b8, 0xc000206460}, 0xc000078a00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e1e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:20 server.go:3160: http: panic serving [::1]:56498: template: signup.html:13: missing value for if
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000298180})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206540}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206540}, 0xc00029a100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206540}, 0xc00029a100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002845d0}, {0x454e3b8, 0xc000206540}, 0xc00029a100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e280, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:20 server.go:3160: http: panic serving [::1]:56499: template: signup.html:13: missing value for if
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111830})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190380}, {0x0, 0x0}, {0xc0002bb990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190380}, 0xc000078c00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0xc000078c00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00032a180}, {0x454e3b8, 0xc000190380}, 0xc000078c00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e320, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:20 server.go:3160: http: panic serving [::1]:56500: template: signup.html:13: missing value for if
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000013340})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206620}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206620}, 0xc000078e00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206620}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206620}, 0xc000078e00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00032aab0}, {0x454e3b8, 0xc000206620}, 0xc000078e00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e3c0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:25 server.go:3160: http: panic serving [::1]:56501: template: signup.html:13: missing value for if
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002983f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a01c0}, {0x0, 0x0}, {0xc0002bd990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a01c0}, 0xc000079000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a01c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a01c0}, 0xc000079000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00032b440}, {0x454e3b8, 0xc0002a01c0}, 0xc000079000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288140, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:25 server.go:3160: http: panic serving [::1]:56502: template: signup.html:13: missing value for if
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111a90})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190460}, {0x0, 0x0}, {0xc0002bb990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190460}, 0xc00029a200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0xc00029a200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002847b0}, {0x454e3b8, 0xc000190460}, 0xc00029a200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002881e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:18:25 server.go:3160: http: panic serving [::1]:56503: template: signup.html:13: missing value for if
+goroutine 75 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000298460})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000206700}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000206700}, 0xc000079100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000206700}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000206700}, 0xc000079100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00032b500}, {0x454e3b8, 0xc000206700}, 0xc000079100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00025e460, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:45 server.go:3160: http: panic serving [::1]:56549: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111500})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001902a0}, {0x0, 0x0}, {0xc0000db990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001902a0}, 0xc00017c400)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0xc00017c400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e030}, {0x454e3b8, 0xc0001902a0}, 0xc00017c400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:45 server.go:3160: http: panic serving [::1]:56550: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000125c0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000204380}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000204380}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x4, {0x454e3b8, 0xc000204380}, 0x5141108)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000204380}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e3b8, 0xc000204380}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001315e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:45 server.go:3160: http: panic serving [::1]:56551: template: signup.html:13: missing value for if
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111570})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000204460}, {0x0, 0x0}, {0xc000051990, 0x3, 0x5141108})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000204460}, 0xc000218400)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000204460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000204460}, 0xc000218400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000240060}, {0x454e3b8, 0xc000204460}, 0xc000218400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00021c140, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:46 server.go:3160: http: panic serving [::1]:56552: template: signup.html:13: missing value for if
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002901f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8000}, {0x0, 0x0}, {0xc0002b7990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8000}, 0xc00017c600)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8000}, 0xc00017c600)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019f710}, {0x454e3b8, 0xc0002a8000}, 0xc00017c600)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:46 server.go:3160: http: panic serving [::1]:56553: template: signup.html:13: missing value for if
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111780})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190380}, {0x0, 0x0}, {0xc000092990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190380}, 0xc000292000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0xc000292000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002840f0}, {0x454e3b8, 0xc000190380}, 0xc000292000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002880a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:46 server.go:3160: http: panic serving [::1]:56554: template: signup.html:13: missing value for if
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000290340})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190460}, {0x0, 0x0}, {0xc000092990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190460}, 0xc00017c800)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190460}, 0xc00017c800)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001e8060}, {0x454e3b8, 0xc000190460}, 0xc00017c800)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131900, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:54 server.go:3160: http: panic serving [::1]:56555: template: signup.html:13: missing value for if
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000404310})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190c40}, {0x0, 0x0}, {0xc0002d3990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190c40}, 0xc00017d100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190c40}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190c40}, 0xc00017d100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001e84e0}, {0x454e3b8, 0xc000190c40}, 0xc00017d100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288140, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:54 server.go:3160: http: panic serving [::1]:56556: template: signup.html:13: missing value for if
+goroutine 75 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000290890})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a82a0}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a82a0}, 0xc000292200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a82a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a82a0}, 0xc000292200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284f30}, {0x454e3b8, 0xc0002a82a0}, 0xc000292200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002881e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:54 server.go:3160: http: panic serving [::1]:56559: template: signup.html:13: missing value for if
+goroutine 131 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000290b00})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8380}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8380}, 0xc000292500)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8380}, 0xc000292500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000398c60}, {0x454e3b8, 0xc0002a8380}, 0xc000292500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002883c0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:55 server.go:3160: http: panic serving [::1]:56560: template: signup.html:13: missing value for if
+goroutine 136 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000404580})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190d20}, {0x0, 0x0}, {0xc0002b3990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190d20}, 0xc00017d300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190d20}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190d20}, 0xc00017d300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000406630}, {0x454e3b8, 0xc000190d20}, 0xc00017d300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288460, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:55 server.go:3160: http: panic serving [::1]:56561: template: signup.html:13: missing value for if
+goroutine 137 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000290d70})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8460}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8460}, 0xc000292700)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8460}, 0xc000292700)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003996b0}, {0x454e3b8, 0xc0002a8460}, 0xc000292700)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288500, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:19:55 server.go:3160: http: panic serving [::1]:56562: template: signup.html:13: missing value for if
+goroutine 126 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000290de0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190e00}, {0x0, 0x0}, {0xc0002b3990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190e00}, 0xc00017d500)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190e00}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190e00}, 0xc00017d500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000407020}, {0x454e3b8, 0xc000190e00}, 0xc00017d500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131ea0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:00 server.go:3160: http: panic serving [::1]:56563: template: signup.html:13: missing value for if
+goroutine 142 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000291050})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8540}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8540}, 0xc000219000)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8540}, 0xc000219000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000323290}, {0x454e3b8, 0xc0002a8540}, 0xc000219000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002885a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:00 server.go:3160: http: panic serving [::1]:56564: template: signup.html:13: missing value for if
+goroutine 143 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0004049e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190ee0}, {0x0, 0x0}, {0xc0002b3990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190ee0}, 0xc000292900)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190ee0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190ee0}, 0xc000292900)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003c61e0}, {0x454e3b8, 0xc000190ee0}, 0xc000292900)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288640, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:00 server.go:3160: http: panic serving [::1]:56565: template: signup.html:13: missing value for if
+goroutine 164 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002912c0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8620}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8620}, 0xc000292b00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8620}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8620}, 0xc000292b00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003c6bd0}, {0x454e3b8, 0xc0002a8620}, 0xc000292b00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002886e0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:30 server.go:3160: http: panic serving [::1]:56569: template: signup.html:13: missing value for if
+goroutine 111 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000013970})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000204d20}, {0x0, 0x0}, {0xc0002b7990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000204d20}, 0xc000292d00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000204d20}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000204d20}, 0xc000292d00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003c7560}, {0x454e3b8, 0xc000204d20}, 0xc000292d00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00021c8c0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:30 server.go:3160: http: panic serving [::1]:56570: template: signup.html:13: missing value for if
+goroutine 112 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000291340})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190fc0}, {0x0, 0x0}, {0xc0002b3990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190fc0}, 0xc000219100)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190fc0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190fc0}, 0xc000219100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003233b0}, {0x454e3b8, 0xc000190fc0}, 0xc000219100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00021c960, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:20:30 server.go:3160: http: panic serving [::1]:56571: template: signup.html:13: missing value for if
+goroutine 169 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002915b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0002a8700}, {0x0, 0x0}, {0xc0002b9990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0002a8700}, 0xc000292e00)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0002a8700}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0002a8700}, 0xc000292e00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003c76e0}, {0x454e3b8, 0xc0002a8700}, 0xc000292e00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000288780, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:13 server.go:3160: http: panic serving [::1]:56580: template: signup.html:13: missing value for if
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000111330})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001900e0}, {0x0, 0x0}, {0xc000255990, 0x3, 0x400e314})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001900e0}, 0xc00017c300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001900e0}, 0xc00017c300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020e030}, {0x454e3b8, 0xc0001900e0}, 0xc00017c300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001314a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:13 server.go:3160: http: panic serving [::1]:56581: template: signup.html:13: missing value for if
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002123d0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc00022e0e0}, {0x0, 0x0}, {0xc000139990, 0x3, 0x5141f18})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc00022e0e0}, 0xc00017c200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc00022e0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc00022e0e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000113770}, {0x454e3b8, 0xc00022e0e0}, 0xc00017c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131540, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:13 server.go:3160: http: panic serving [::1]:56582: template: signup.html:13: missing value for if
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc000212440})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001901c0}, {0x0, 0x0}, {0xc0001c7990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001901c0}, 0xc00017c500)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001901c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001901c0}, 0xc00017c500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019e780}, {0x454e3b8, 0xc0001901c0}, 0xc00017c500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131720, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:14 server.go:3160: http: panic serving [::1]:56583: template: signup.html:13: missing value for if
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0001116b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0001902a0}, {0x0, 0x0}, {0xc0001c9990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0001902a0}, 0xc000216300)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0001902a0}, 0xc000216300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020f320}, {0x454e3b8, 0xc0001902a0}, 0xc000216300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000278000, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:14 server.go:3160: http: panic serving [::1]:56584: template: signup.html:13: missing value for if
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0000b05e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc0000d01c0}, {0x0, 0x0}, {0xc0001c7990, 0x3, 0x51415b8})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc0000d01c0}, 0xc000216200)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc0000d01c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc0000d01c0}, 0xc000216200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00020f2c0}, {0x454e3b8, 0xc0000d01c0}, 0xc000216200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002780a0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:21:14 server.go:3160: http: panic serving [::1]:56585: template: signup.html:13: missing value for if
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4474a00, 0xc0002125b0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+sampleapp/app/controllers.generateHTML({0x454e3b8, 0xc000190380}, {0x0, 0x0}, {0xc0001c9990, 0x3, 0x5141a68})
+	/Users/yuuki/go/src/sampleapp/app/controllers/server.go:23 +0xf9
+sampleapp/app/controllers.signup({0x454e3b8, 0xc000190380}, 0xc00017c900)
+	/Users/yuuki/go/src/sampleapp/app/controllers/route_auth.go:15 +0xff
+net/http.HandlerFunc.ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x454e3b8, 0xc000190380}, 0xc00017c900)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019f650}, {0x454e3b8, 0xc000190380}, 0xc00017c900)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001317c0, {0x454fc80, 0xc000113620})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/04 03:42:30 server.go:3160: http: superfluous response.WriteHeader call from sampleapp/app/controllers.signup (route_auth.go:44)

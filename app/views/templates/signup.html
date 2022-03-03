@@ -1,0 +1,16 @@
+{{ define "content" }}
+<h1 class="content">Sign Up</h1>
+
+<form class="form-signin" role="form" action="/signup" method="post">
+    <h2 class="form-sign-heading">
+        <i class="fa fa-comments-o">
+            SampleApp
+        </i>
+    </h2>
+    <div class="load">登録</div>
+    <input id="name" type="text" name="name" class="form-control" placeholder="お名前" required autofocus>
+    <input type="email" name="email" class="form-control" placeholder="Email" required>
+    <input type="password" name="password" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-endblock" type="submit">登録</button>
+</form>
+{{ end }}
